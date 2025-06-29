@@ -1,0 +1,231 @@
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #ffeaf4;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.cotton-header {
+  background: linear-gradient(135deg, #ffd1dc, #e0c3fc, #a1c4fd);
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.cotton-header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 46px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.cotton-header .tagline {
+  font-size: 20px;
+  font-style: italic;
+  color: #fff8f8;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  background: white;
+}
+
+.bubble1 { width: 100px; height: 100px; top: 20px; left: 30px; }
+.bubble2 { width: 150px; height: 150px; top: 50px; right: 40px; }
+.bubble3 { width: 80px; height: 80px; bottom: 10px; left: 50%; transform: translateX(-50%); }
+
+}
+
+.navbar {
+    background-color: white;
+    border-top: 2px solid #ffd6eb;
+    border-bottom: 2px solid #ffd6eb;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 25px;
+    color: #ff6fa7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ffe4f0;
+    border-radius: 20px;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.navbar ul ul li {
+    width: 160px;
+}
+
+.navbar ul ul a {
+    padding: 12px 16px;
+}
+
+.menu {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 5px solid #ffb6c1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #ff69b4;
+}
+
+.card p {
+  margin: 0;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.emoji {
+  font-size: 24px;
+  margin: 5px;
+  line-height: 1;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: linear-gradient(to right, #ff9eb8, #fcb3f1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.5);
+}
+
+.card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.6);
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: linear-gradient(to right, #ff9eb8, #fcb3f1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.5);
+  text-decoration: none;
+}
+
+.order-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.6);
+}
+
+.info {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .cotton-header h1 {
+    font-size: 32px;
+  }
+
+  .cotton-header .tagline {
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
